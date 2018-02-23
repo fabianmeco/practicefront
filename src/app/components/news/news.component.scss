@@ -1,0 +1,16 @@
+.news-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.new-wrapper{
+    border: 1px solid #e7e7ed;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.new-foot{
+    i{
+        color: #c0c8d1;
+    }
+}

@@ -1,0 +1,71 @@
+$headermenucolor: #2f323a;
+$white: #f5f5fa;
+
+header{
+    width: 100%;
+    display: flex;    
+}
+
+.logo{
+    width: 264px;
+    height: 60px;
+    background-color: #1e2025;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        background-image: url("../../../assets/r-3-l-logo-application-02.png");
+        background-size: cover;
+        width: 170px;
+        height: 20px;
+    }
+}
+.settings{
+    background-color: $headermenucolor;
+    padding-right: 40px;
+    flex-grow: 1;    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a{
+        text-decoration: none;
+        color: $white;
+        font-weight: bold;
+    }
+}
+.body{
+    display: flex;      
+}
+.menu{
+    background-color: $headermenucolor;   
+    width: 264px;
+    height: 100%;
+    display: flex;
+    flex-flow: column; 
+    align-items: center;      
+    .navigate{
+        color: #4d5056;
+        border-bottom: 1px solid #4d5056;
+        width: 80%;
+        padding: 5px 0; 
+        margin-top: 15px;
+    }
+    ul{
+        list-style: none;
+        width: 80%;
+        padding: 0;
+        li{
+            padding: 10px 0;            
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: bold;                
+                i{
+                    margin-right: 5px;
+                    color: #5c9df5;
+                }
+            }            
+        }        
+    }
+    
+}
