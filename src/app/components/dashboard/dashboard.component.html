@@ -1,3 +1,9 @@
-<app-speed-zones></app-speed-zones>
-<app-count-by-zones></app-count-by-zones>
-<app-speed-average></app-speed-average>
+<div class="chart-container">
+    <div class="line-chart">
+        <canvas baseChart [labels]="lineChartLabels" [data]="lineChartData" [colors]="lineChartColors" [chartType]="lineChartType"></canvas>
+    </div>
+    <div class="bottom-charts">
+        <div class="colum-chart"></div>
+        <div class="donut-chart"></div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.chart-container{
+    display: flex;
+    flex-flow: column;
+}
+.line-chart, .bottom-charts{
+   background-color: #fff;
+   height: 300px; 
+}
+.bottom-charts{
+    display: flex;
+    
+}

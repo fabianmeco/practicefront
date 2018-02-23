@@ -34,15 +34,17 @@ header{
     }
 }
 .body{
-    display: flex;      
-}
-.menu{
+    display: flex;
+    .content-body{   
+        margin: 30px;
+        width: 950px      
+    }  
+    .menu{
     background-color: $headermenucolor;   
     width: 264px;
-    height: 100%;
     display: flex;
     flex-flow: column; 
-    align-items: center;      
+    align-items: center; 
     .navigate{
         color: #4d5056;
         border-bottom: 1px solid #4d5056;
@@ -68,4 +70,6 @@ header{
         }        
     }
     
+}    
 }
+
