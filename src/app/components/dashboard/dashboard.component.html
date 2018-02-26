@@ -1,9 +1,13 @@
 <div class="chart-container">
-    <div class="line-chart">
-        <canvas baseChart [labels]="lineChartLabels" [data]="lineChartData" [colors]="lineChartColors" [chartType]="lineChartType"></canvas>
+    <div class="line-chart lineChart">
+        <app-speed-zones></app-speed-zones>
     </div>
     <div class="bottom-charts">
-        <div class="colum-chart"></div>
-        <div class="donut-chart"></div>
+        <div class="column-chart barChart">
+            <app-count-by-zones></app-count-by-zones>
+        </div>
+        <div class="donut-chart pieChart">
+            <app-speed-average></app-speed-average>
+        </div>
     </div>
 </div>

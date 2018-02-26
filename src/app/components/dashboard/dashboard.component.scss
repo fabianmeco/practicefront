@@ -1,12 +1,28 @@
 .chart-container{
     display: flex;
     flex-flow: column;
+    align-items: center;
+    width: 100%
 }
 .line-chart, .bottom-charts{
    background-color: #fff;
-   height: 300px; 
+   border: 1px solid #e7e7ed;
+}
+.line-chart{
+    display: block;
 }
 .bottom-charts{
+    margin-top: 10px;
     display: flex;
-    
+    flex-wrap: nowrap;   
+    width: 100%; 
+}
+.chart{
+    display: block;
+}
+.column-chart{
+    width: 60%;
+}
+.donut-chart{
+    width: 35%;
 }

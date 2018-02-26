@@ -1,20 +1,20 @@
 <header>
-  <div class="logo">
+  <div class="logo" [ngClass]="{'small-logo': menuHidden}">
     <div></div>
   </div>
   <div class="settings"><a href="">Admin Name <i class="fa fa-cog"></i></a></div>
 </header>
 <div class="body">
-  <div class="menu">
+  <div class="menu" [ngClass]="{'hide-menu': menuHidden}">
     <div class="navigate"><span>NAVIGATE</span></div>
     <ul>
-      <li><a routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-line-chart"></i> Analytics</a></li>
-      <li><a routerLink="/news" routerLinkActive="active"><i class="fa fa-newspaper-o"></i> News</a></li>
-      <li><a href="#"><i class="fa fa-files-o"></i> Board Brief</a></li>
-      <li><a href="#"><i class="fa fa-suitcase"></i> Briefcase</a></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-line-chart"></i><span> Analytics</span></a></li>
+      <li><a routerLink="/news" routerLinkActive="active"><i class="fa fa-newspaper-o"></i><span> News</span></a></li>
+      <li><a href="#"><i class="fa fa-files-o"></i> <span> Board Brief</span></a></li>
+      <li><a href="#"><i class="fa fa-suitcase"></i><span> Briefcase</span></a></li>
     </ul>    
     <ul class="close">
-      <li><a href=""><i class="fa fa-angle-double-left"></i> Close Menu</a></li>
+      <li (click)="hideMenu()"><i class="fa" [ngClass]="{'fa-angle-double-left':!menuHidden, 'fa-angle-double-right': menuHidden}"></i><span> Close Menu</span></li>
     </ul>
    
   </div>

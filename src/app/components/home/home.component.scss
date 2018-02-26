@@ -7,6 +7,7 @@ header{
 }
 
 .logo{
+    transition: width .5s;
     width: 264px;
     height: 60px;
     background-color: #1e2025;
@@ -18,6 +19,14 @@ header{
         background-size: cover;
         width: 170px;
         height: 20px;
+    }
+    &.small-logo{
+        width: 40px;
+        transition: width .5s;
+        div{
+            background-position-x: right;
+            width: 25px;        
+        }
     }
 }
 .settings{
@@ -34,12 +43,14 @@ header{
     }
 }
 .body{
-    display: flex;
-    .content-body{   
+    width: 100%;
+    display: flex;        
+   .content-body{   
         margin: 30px;
-        width: 950px      
+        flex: 1;                   
     }  
     .menu{
+    transition: width .5s;
     background-color: $headermenucolor;   
     width: 264px;
     display: flex;
@@ -58,6 +69,8 @@ header{
         padding: 0;
         li{
             padding: 10px 0;            
+            color: $white;
+            font-weight: bold;
             a{
                 text-decoration: none;
                 color: $white;
@@ -66,8 +79,29 @@ header{
                     margin-right: 5px;
                     color: #5c9df5;
                 }
-            }            
+            }
+            i{
+                margin-right: 5px;
+                color: #5c9df5;
+            }
         }        
+    }
+    &.hide-menu{
+        width: 40px;
+        transition: width .5s;
+        .navigate{
+            width: 0px;
+            span{
+                transition: display .5;
+                display: none;
+            }
+        }
+        ul{
+            li{                
+                transition: display .5;
+                span{display: none}
+            }
+        }
     }
     
 }    

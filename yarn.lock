@@ -194,6 +194,16 @@
     semver "^5.3.0"
     semver-intersect "^1.1.2"
 
+"@types/geojson@*":
+  version "7946.0.1"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.1.tgz#1fc41280e42f08f0d568401a556bc97c34f5262e"
+
+"@types/highcharts@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@types/highcharts/-/highcharts-5.0.18.tgz#0599f30872b79ce5878d8de31fd32747f71d4a9b"
+  dependencies:
+    "@types/geojson" "*"
+
 "@types/jasmine@*", "@types/jasmine@~2.8.3":
   version "2.8.6"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.6.tgz#14445b6a1613cf4e05dd61c3c3256d0e95c0421e"
@@ -335,6 +345,10 @@ amqplib@^0.5.2:
     buffer-more-ints "0.0.2"
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
+
+angular-highcharts@^5.2.10:
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/angular-highcharts/-/angular-highcharts-5.2.10.tgz#5dcf24d7901915f6746d85750f0fff2b54c4c7ab"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -1143,7 +1157,7 @@ chalk@~2.2.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
-chart.js@^2.6.0, chart.js@^2.7.1:
+chart.js@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.7.1.tgz#ae90b4aa4ff1f02decd6b1a2a8dabfd73c9f9886"
   dependencies:
@@ -4312,12 +4326,6 @@ negotiator@0.6.1:
 netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
-
-ng2-charts@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-1.6.0.tgz#108a2133ff62a8623895240fadbddbea2951f29d"
-  dependencies:
-    chart.js "^2.6.0"
 
 no-case@^2.2.0:
   version "2.3.2"
